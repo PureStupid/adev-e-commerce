@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <main>
+      <div class="top">
+        <h1>Categories</h1>
+      </div>
+      <div class="container"></div>
+      <div id="sidebar-container"></div>
+    </main>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $.get("../assets/components/header.html", function (data) {
+      $("#header-container").replaceWith(data);
+    });
+  </script>
+  <script>
+    $.get("../assets/components/sidebar.html", function (data) {
+      $("#sidebar-container").replaceWith(data);
+    });
+  </script>
+</html>
